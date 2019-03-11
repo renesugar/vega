@@ -35,7 +35,8 @@ const onEvents = array(allOf(
         exprRef,
         signalRef,
         object({_value_: anyType}, undefined)
-      )
+      ),
+      rerank: booleanType
     }, undefined)
   )
 ));

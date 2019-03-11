@@ -55,6 +55,10 @@ export default function(spec, scope, target) {
     entry.options = {force: true};
   }
 
+  if (spec.rerank != null) {
+    entry.options = extend({rerank: !!spec.rerank}, entry.options);
+  }
+
   sources.forEach(function(source) {
     scope.addUpdate(extend(streamSource(source, scope), entry));
   });

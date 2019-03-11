@@ -21,6 +21,7 @@ export type OnEvent = (
     }
   | {
       update: Update;
+      rerank?: boolean;
     }) & {
   events: Events | EventListener[];
   force?: boolean;
