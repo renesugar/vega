@@ -63,6 +63,7 @@
   "nulls-scatter-plot",
   "overview-detail",
   "panzoom",
+  "panzoom-brush",
   "parallel-coords",
   "playfair",
   "population",
